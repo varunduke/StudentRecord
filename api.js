@@ -28,7 +28,7 @@ router.route('/delete').delete((request, response) => {
     let id = request.body.id;
     db.getDelete(tableName, id).then(results => {
         console.dir(results);
-        response.json(results)
+        response.json(results);
     }); 
 });
 
